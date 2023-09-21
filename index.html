@@ -1,101 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--divinectorweb.com-->
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RandomQoutes</title>
-    <link rel="icon" href="horse.jpeg">
-    <style>
-        body {
-            
-            background: #cca7cb;
-            background-image: -webkit-linear-gradient(top, #cca7cb, #3cb0fd);
-            background-image: -moz-linear-gradient(top, #cca7cb, #3cb0fd);
-            background-image: -ms-linear-gradient(top, #cca7cb, #3cb0fd);
-            background-image: -o-linear-gradient(top, #cca7cb, #3cb0fd);
-            background-image: linear-gradient(to bottom, #cca7cb, #3cb0fd);
-        }
-
-        #one {
-            border: 4px solid black;
-            position: absolute;
-            height: 500px;
-            width: 600px;
-            top: 50px;
-            left: 375px;   
-            text-decoration: none;
-        }
-        .quote {
-            line-height: 3;
-            padding-left: 20px;
-            font-family: Courier New;
-        }
-
-        .three {
-            margin-left: 140px;
-            margin-top: 48px;
-        }
-
-        .btn {
-            background: #3498db;
-            background-image: -webkit-linear-gradient(top, #34db82, #b8cad6);
-            background-image: -moz-linear-gradient(top, #3498db, #d4d6b8);
-            background-image: -ms-linear-gradient(top, #3498db, #b8cad6);
-            background-image: -o-linear-gradient(top, #3498db, #b8cad6);
-            background-image: linear-gradient(to bottom, #3498db, #b8cad6);
-            -webkit-border-radius: 4;
-            -moz-border-radius: 4;
-            border-radius: 4px;
-            font-family: Courier New;
-            color: #f2e9f2;
-            font-size: 31px;
-            padding: 10px 20px 10px 20px;
-            border: solid #07131a 3px;
-            text-decoration: none;
-        }
-
-        .btn:hover {
-            background: #3cb0fd;
-            background-image: -webkit-linear-gradient(top, #3cb0fd, #cca7cb);
-            background-image: -moz-linear-gradient(top, #3cb0fd, #cca7cb);
-            background-image: -ms-linear-gradient(top, #3cb0fd, #cca7cb);
-            background-image: -o-linear-gradient(top, #3cb0fd, #cca7cb);
-            background-image: linear-gradient(to bottom, #3cb0fd, #cca7cb);
-            text-decoration: none;
-        }
-        @media (max-width: 450px ) 
-        {
-            #one
-            {
-                left:1px;
-                width:400px;
-                line-height: 1;
-                top:0px;
-                height: 900px;
-            }
-            .btn{
-                width: 300px;
-                margin-left: 50px;
-            }
-            .quote{
-                font-weight: 200;
-                font-size:20px;
-            }
-          }
-    </style>
+    <title>Random Quotes Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div id="one">
-        <p class="quote" id="rey">
-            <b>Life goes on......</b>
-        </p>
-        <br>
-        <button id="btn" class="btn three">Generate</button>
+    <div class="container">
+      
+      <div class="header">
+        <h2>Javascript Quote Generator</h2>
+      </div>
+  
+      <div class="main-content">
+       
+        <div class="text-area">
+          <span class="quote">"Life is what happens when you're busy making other plans"</span>
+        </div>
+        
+        <div class="writer">– John Lennon</div>
+  
+        <div class="button-area">  
+          <div class="btn">
+            <button id="Qbtn">Find Quotes</button>
+          </div>
+        </div>
+        
+      </div>
+  
     </div>
-    <script src="script.js"></script>
+    
+    <script src="custom.js"></script>
 </body>
-
 </html>
